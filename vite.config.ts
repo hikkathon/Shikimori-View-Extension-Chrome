@@ -23,5 +23,33 @@ export default defineConfig({
         /chrome-extension:\/\//,
       ],
     },
+    headers: {
+      "Content-Security-Policy": `
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://kodik.cc;
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        connect-src 'self';
+        font-src 'self';
+        object-src 'none';
+        frame-src https://kodik.cc;
+        worker-src 'self' blob:;
+      `.replace(/\s{2,}/g, ' ').trim()
+    }
   },
+  preview: {
+    headers: {
+      "Content-Security-Policy": `
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://kodik.cc;
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        connect-src 'self';
+        font-src 'self';
+        object-src 'none';
+        frame-src https://kodik.cc;
+        worker-src 'self' blob:;
+      `.replace(/\s{2,}/g, ' ').trim()
+    }
+  }
 })
