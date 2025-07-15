@@ -1,9 +1,7 @@
 import axios from "axios";
-import { KODIK_BASE_URL } from "@/config/env.ts";
 
 const api = axios.create({
-  baseURL: KODIK_BASE_URL,
-  withCredentials: true,
+  baseURL: "https://kodikapi.com",
   headers: {
     'Content-Type': 'application/json',
   }

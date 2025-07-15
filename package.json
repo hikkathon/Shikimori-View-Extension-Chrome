@@ -16,8 +16,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@tanstack/react-query-devtools": "^5.83.0",
     "@crxjs/vite-plugin": "^2.0.0",
+    "@tanstack/react-query-devtools": "^5.83.0",
     "@types/axios": "^0.9.36",
     "@types/chrome": "^0.0.313",
     "@types/node": "^22.13.14",

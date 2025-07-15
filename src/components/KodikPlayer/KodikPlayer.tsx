@@ -1,12 +1,8 @@
 import './index.css'
 
-type PropsVideo = {
-  videoId: number,
-  hash: string,
-}
+export default function KodikPlayer({kodikLink}: { kodikLink: string }) {
+  const src = `https:${kodikLink}`;
 
-export default function KodikPlayer({videoId, hash}: PropsVideo) {
-  const src = `https://kodik.info/serial/${videoId}/${hash}/720p`;
   return (
     <div className="player-container">
       <iframe
@@ -16,5 +12,5 @@ export default function KodikPlayer({videoId, hash}: PropsVideo) {
         className="kodik-iframe"
       />
     </div>
-  )
+  );
 }

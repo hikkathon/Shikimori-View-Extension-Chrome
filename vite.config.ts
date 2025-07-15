@@ -26,13 +26,13 @@ export default defineConfig({
     headers: {
       "Content-Security-Policy": `
         default-src 'self';
-        script-src 'self' 'unsafe-inline' https://kodik.cc;
+        script-src 'self' 'unsafe-inline' https://kodikapi.com;
         style-src 'self' 'unsafe-inline';
         img-src 'self' data:;
         connect-src 'self';
         font-src 'self';
         object-src 'none';
-        frame-src https://kodik.cc;
+        frame-src https://kodikapi.com;
         worker-src 'self' blob:;
       `.replace(/\s{2,}/g, ' ').trim()
     }
@@ -41,13 +41,13 @@ export default defineConfig({
     headers: {
       "Content-Security-Policy": `
         default-src 'self';
-        script-src 'self' 'unsafe-inline' https://kodik.cc;
+        script-src 'self' 'unsafe-inline' https://kodikapi.com;
         style-src 'self' 'unsafe-inline';
         img-src 'self' data:;
         connect-src 'self';
         font-src 'self';
         object-src 'none';
-        frame-src https://kodik.cc;
+        frame-src https://kodikapi.com;
         worker-src 'self' blob:;
       `.replace(/\s{2,}/g, ' ').trim()
     }

@@ -16,6 +16,18 @@ export default defineManifest({
   },
   content_scripts: [{
     js: ['src/content/main.tsx'],
-    matches: ['https://*/*'],
+    matches: ['https://shikimori.one/*',"https://kodikapi.com/*"],
   }],
+  permissions:[
+    "tabs",
+    "webRequest",
+    "webNavigation",
+  ],
+  host_permissions: [
+    "https://kodikapi.com/*",
+    "https://shikimori.one/*"
+  ],
+  background:{
+    service_worker: "src/backgrounds/index.js",
+  }
 })
