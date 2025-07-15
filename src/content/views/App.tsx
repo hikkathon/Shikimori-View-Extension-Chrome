@@ -15,7 +15,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const match = url.match(/\/(\d+)-/);
+    const match = url.match(/\/[a-z]*(\d+)-/);
     const id = match ? parseInt(match[1], 10) : undefined;
     setShikimoriId(id);
   }, [url]);
