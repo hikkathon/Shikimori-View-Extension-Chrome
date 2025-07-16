@@ -1,52 +1,53 @@
-# React + Vite + CRXJS
+# Shikimori Extension
 
-This template helps you quickly start developing Chrome extensions with React, TypeScript and Vite. It includes the CRXJS Vite plugin for seamless Chrome extension development.
+Расширение для браузера, добавляющее функциональность просмотра аниме сериалов на сайте [shikimori.one](https://shikimori.one/).
 
-## Features
+![Пример работы расширения](public/screenshot.png)
 
-- React with TypeScript
-- TypeScript support
-- Vite build tool
-- CRXJS Vite plugin integration
-- Chrome extension manifest configuration
+## 🛠 Технологии
 
-## Quick Start
+- ⚡ **Vite** - Сборщик проекта
+- ⚛ **React** - Библиотека для построения пользовательского интерфейса
+- 💙 **TypeScript** - Язык программирования
+- 🧩 **CRXJS Vite Plugin** - Плагин для разработки Chrome расширений с Vite
 
-1. Install dependencies:
+## 📦 Установка для разработки
 
+### Предварительные требования
+- Node.js v16+
+- npm/yarn/pnpm
+- Браузер Chrome или его производные
+
+### Шаги установки:
+
+1. #### Клонируйте репозиторий:
+```bash
+git clone https://github.com/your-username/shikimori-chrome-extension.git
+cd shikimori-chrome-extension
+```
+
+2. #### Установите зависимости:
 ```bash
 npm install
 ```
 
-2. Start development server:
-
+3. #### Запустите проект в режиме разработки:
 ```bash
 npm run dev
 ```
 
-3. Open Chrome and navigate to `chrome://extensions/`, enable "Developer mode", and load the unpacked extension from the `dist` directory.
+4. #### Загрузите расширение в браузер:
+- Откройте Chrome и перейдите по адресу `chrome://extensions/`
+- Включите "Режим разработчика"
+- Нажмите "Загрузить распакованное расширение" и выберите папку `dist` проекта
 
-4. Build for production:
-
+### 📦 Сборка для production
 ```bash
 npm run build
 ```
+Собранное расширение будет находиться в папке dist.
 
-## Project Structure
-
-- `src/popup/` - Extension popup UI
-- `src/content/` - Content scripts
-- `manifest.config.ts` - Chrome extension manifest configuration
-
-## Documentation
-
-- [React Documentation](https://reactjs.org/)
-- [Vite Documentation](https://vitejs.dev/)
-- [CRXJS Documentation](https://crxjs.dev/vite-plugin)
-
-## Chrome Extension Development Notes
-
-- Use `manifest.config.ts` to configure your extension
-- The CRXJS plugin automatically handles manifest generation
-- Content scripts should be placed in `src/content/`
-- Popup UI should be placed in `src/popup/`
+## ⛓️‍💥 Функциональность
+- Просмотр аниме сериалов напрямую на [shikimori.one](https://shikimori.one/)
+- Интеграция с интерфейсом сайта
+- Дополнительные функции управления просмотром
