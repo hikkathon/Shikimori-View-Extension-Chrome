@@ -1,4 +1,4 @@
-# Shikimori Extension
+# Shikimori View Extension
 
 Расширение для браузера, добавляющее функциональность просмотра аниме сериалов на сайте [shikimori.one](https://shikimori.one/).
 
