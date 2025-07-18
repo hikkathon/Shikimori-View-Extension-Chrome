@@ -22,7 +22,7 @@
 
 1. #### Клонируйте репозиторий:
 ```bash
-git clone https://github.com/your-username/shikimori-chrome-extension.git
+git clone https://github.com/hikkathon/Shikimori-View-Extension-Chrome.git
 cd shikimori-chrome-extension
 ```
 
