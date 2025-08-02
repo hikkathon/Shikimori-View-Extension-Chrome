@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://yagames.noilty.com/api/",
+  baseURL: "https://kodikapi.com/",
   headers: {
     'Content-Type': 'application/json',
   }
